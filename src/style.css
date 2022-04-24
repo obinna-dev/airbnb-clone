@@ -51,12 +51,13 @@ section.card  {
     height: 295px;
     width: 236px;
     border-radius: 9px;
-    background-image: url(./images/Katie\ Zaferes.jpeg);
+    /* background-image: url(./images/Katie-Zaferes.jpeg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 1rem 0;
     padding: 0.5rem;
+    background-color: red;
 }
 
 .availability   {
