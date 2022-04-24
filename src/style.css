@@ -43,6 +43,13 @@ section {
     margin: 0;
 }
 
+.cards-list {
+    display: flex;
+    gap: 2rem;
+    overflow-y: scroll;
+    padding-bottom: 2rem;
+}
+
 section.card  {
     margin: 3rem 0 2rem;
 }
@@ -51,7 +58,6 @@ section.card  {
     height: 295px;
     width: 236px;
     border-radius: 9px;
-    /* background-image: url(./images/Katie-Zaferes.jpeg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,6 +68,7 @@ section.card  {
 .availability   {
     margin: 0;
     font-size: 0.9rem;
+    font-weight: 500;
     background-color: #ffffff;
     text-align: center;
     color: #222222;

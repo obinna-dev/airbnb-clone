@@ -4,24 +4,17 @@ import Card from "./components/Card"
 import dataArr from "./components/data"
 
 export default function App()    {
-    const cardElements = dataArr.map(data => {
-        console.log(data)
+    const cards = dataArr.map(data => {
         return <Card
-            img = {data.coverImg}
-            rating = {data.stats.rating}
-            reviewCount = {data.stats.reviewCount}
-            location = {data.location}
-            title = {data.title}
-            price = {data.price}
+            key = {data.id} //This solves the console warning "Warning: Each child in a list should have a unique "key" prop."
+            {...data}
         />
     })
-
-
     return (
         <div>  
             <Navbar />
             <Hero />
-            {cardElements}
+            <section className="cards-list">{cards}</section>
         </div>
     )
 }
