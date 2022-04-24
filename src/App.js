@@ -14,10 +14,10 @@ export default function App()    {
             <Card 
                 img = {KatieImage}
                 rating = "5.0"
-                reviewCount = "(6)"
+                reviewCount = {6}
                 location = "Australia"
                 title = "Life lessons with Katie Zaferes"
-                price = "136"
+                price = {136}
             />
         </div>
     )
